@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>APOG</title>
+
+  
+  <style type="text/css" media="all">@import url("http://dev-apog.gotpantheon.com/modules/system/system.base.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/system/system.menus.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/system/system.messages.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/system/system.theme.css?msrv3u");</style>
+<style type="text/css" media="all">@import url("http://dev-apog.gotpantheon.com/modules/aggregator/aggregator.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/book/book.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/comment/comment.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/field/theme/field.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/node/node.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/poll/poll.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/search/search.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/user/user.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/modules/forum/forum.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/profiles/civicrm_starterkit/modules/contrib/views/css/views.css?msrv3u");</style>
+<style type="text/css" media="all">@import url("http://dev-apog.gotpantheon.com/profiles/civicrm_starterkit/modules/contrib/ctools/css/ctools.css?msrv3u");</style>
+<style type="text/css" media="all">@import url("http://dev-apog.gotpantheon.com/sites/all/themes/apog/stylesheets/app.css?msrv3u");
+@import url("http://dev-apog.gotpantheon.com/sites/all/themes/apog/stylesheets/apog.css?msrv3u");</style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/misc/drupal.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.tooltips.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.alerts.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.reveal.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.abide.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.orbit.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.section.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.magellan.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.dropdown.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.interchange.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.placeholder.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.forms.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.joyride.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.clearing.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.cookie.js?msrv3u"></script>
+<script type="text/javascript" src="http://dev-apog.gotpantheon.com/sites/all/themes/apog/javascripts/foundation/foundation.topbar.js?msrv3u"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"apog","theme_token":"T7AXzBDutAhnWjBD9sS3pGobmHIxxpo3W_RA2fdKfkE","js":{"http:\/\/code.jquery.com\/jquery-1.8.2.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.tooltips.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.alerts.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.reveal.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.abide.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.orbit.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.section.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.magellan.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.dropdown.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.interchange.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.placeholder.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.forms.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.joyride.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.clearing.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.cookie.js":1,"sites\/all\/themes\/apog\/javascripts\/foundation\/foundation.topbar.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"profiles\/civicrm_starterkit\/modules\/contrib\/views\/css\/views.css":1,"profiles\/civicrm_starterkit\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/apog\/stylesheets\/app.css":1,"sites\/all\/themes\/apog\/stylesheets\/apog.css":1}}});
+//--><!]]>
+</script>
+  
+
+  <script src="sites/all/themes/apog/javascripts/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+    
+  <!-- Navigation -->
+
+  <header id="header">
+    <div class="contain-to-grid">
+      <nav class="top-bar">
+        <ul class="title-area">
+          <!-- Title Area -->
+          <li class="name">
+            <h1>
+              <a href="#">
+                <img src="sites/all/themes/apog/img/logo.jpg" width="118" height="45"/>
+              </a>
+            </h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+        </ul>
+     
+        <div class="top-bar-section">
+          <!-- Right Nav Section -->
+          
+            
+          <ul class="right"><li class="divider"></li><li class="first expanded has-dropdown"><a href="/node/1">About Us</a><ul class="dropdown"><li><a href="/node/10">Mission</a></li><li><a href="/node/11">Board of Directors</a></li><li><a href="/node/12">Sponsors</a></li><li><a href="/node/13">Constitutional Bylaws</a></li></ul></li><li class="divider"></li><li class="expanded has-dropdown"><a href="/node/2">Programs &amp; Courses</a><ul class="dropdown"><li><a href="/node/16">APOG Introduction to Research Course</a></li><li><a href="/node/15">APOG Educational CD Series</a></li><li><a href="/node/14">STIRRHS</a></li></ul></li><li class="divider"></li><li class="expanded has-dropdown"><a href="/node/3">Media Centre</a><ul class="dropdown"><li><a href="/node/17">Backgrounder</a></li><li><a href="/node/18">News Releases</a></li><li><a href="/node/19">Frequently Asked Questions</a></li><li><a href="/node/20">Organization Leaders</a></li><li><a href="/node/21">Fact Sheet: Departments of OBGYN</a></li><li><a href="/node/22">Press Contacts</a></li></ul></li><li class="divider"></li><li class="expanded has-dropdown"><a href="/node/5">Membership</a><ul class="dropdown"><li><a href="/node/28">Membership Categories</a></li><li><a href="/node/29">Become a Member</a></li></ul></li><li class="divider"></li><li class="last expanded has-dropdown"><a href="/node/6">Events</a><ul class="dropdown"><li><a href="/node/30">APOG Abstract Program Guidelines</a></li><li><a href="/node/31">Abstract Submission</a></li><li><a href="/node/32">APOG Preliminary Program</a></li></ul></li><li class="divider"></li><li class="divider"></li></ul>
+          
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- End Top Bar -->
+
+  <!-- Page -->
+
+  <!-- Slider -->
+  
+  <aside>
+    
+    <div class="slideshow-wrapper">
+      
+      <ul data-orbit data-options="pause_on_hover:false;navigation_arrows:false;slide_number:false;timer:true;bullets:false;timer_speed:10000;variable_height:false">
+        <li>
+          <img src="http://placehold.it/1600x300/00557f/ffffff&text=HeaderA">
+        </li>
+        <li>
+          <img src="http://placehold.it/1600x300/0099e5/ffffff&text=HeaderB">
+        </li>
+        <li>
+          <img src="http://placehold.it/1600x300/003b59/ffffff&text=HeaderC">
+        </li>
+      </ul>
+
+    </div>
+
+  </aside>
+
+  <!-- End Slider -->
+
+  <!-- Snippets -->
+
+
+  <div class="row">
+  
+    <!-- Content Area -->
+
+    <div id="contentArea" class="large-12 columns">
+      
+      
+
+      <!-- Main Columns -->
+
+      <div class="row">
+
+        <div class="large-4 columns" id="content">
+        
+          <aside>
+
+                        <h1>Welcome to APOG</h1>            
+                        <div class="tabs"></div>            
+            <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="first-time"><p>No front page content has been created yet.</p></div>  </div>
+</div>
+  </div>
+          
+          </aside>
+
+        </div>
+
+        <div class="large-4 columns">
+        
+          <aside>
+            
+            <h2>Welcome</h2>
+            <p>Praesent commodo leo ut tincidunt elementum. Nulla dignissim ullamcorper faucibus. Aenean urna magna, viverra a arcu vel, vehicula pretium tortor. Vestibulum cursus tristique ipsum vitae accumsan.</p>
+          
+          </aside>
+
+        </div>
+
+        <div class="large-4 columns">
+        
+          <aside>
+            
+            <h2>Welcome</h2>
+            <p>Praesent commodo leo ut tincidunt elementum. Nulla dignissim ullamcorper faucibus. Aenean urna magna, viverra a arcu vel, vehicula pretium tortor. Vestibulum cursus tristique ipsum vitae accumsan.</p>
+          
+          </aside>
+
+        </div>
+
+      </div>
+
+      <!-- End Main Columns -->
+
+    </div>
+
+    <!-- End Content Area -->
+
+  </div>
+
+  <!-- End Snippets -->
+
+  <!-- Membership -->
+
+  <article style="background-color: #bfd4df">
+
+    <div class="row">
+
+      <div class="large-6 columns">
+        <h3>Header</h3>
+        <p>Nunc eget ipsum euismod, aliquet justo id, suscipit ipsum. Aliquam nec urna ornare, vestibulum erat et, sollicitudin leo. Integer elit justo, aliquet nec lectus eget, suscipit placerat est. Sed tempor elit nisi, vel tincidunt purus dignissim quis. Mauris sodales eros nunc, quis fringilla turpis placerat eget. Nunc purus mi, imperdiet id nunc non, porta varius lectus. Fusce adipiscing vehicula lacinia. Nunc suscipit pretium fermentum. Quisque non ligula eu dui faucibus tristique ut sed urna.</p>
+      </div>
+
+      <div class="large-6 columns">
+        
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- End Membership -->
+
+  <!-- Event -->
+
+  <article>
+
+    <div class="row">
+
+      <div class="large-3 columns">
+        <p>&nbsp;</p>
+      </div>
+
+      <div class="large-9 columns">
+        <h3>Header</h3>
+        <p>Nunc eget ipsum euismod, aliquet justo id, suscipit ipsum. Aliquam nec urna ornare, vestibulum erat et, sollicitudin leo. Integer elit justo, aliquet nec lectus eget, suscipit placerat est. Sed tempor elit nisi, vel tincidunt purus dignissim quis. Mauris sodales eros nunc, quis fringilla turpis placerat eget. Nunc purus mi, imperdiet id nunc non, porta varius lectus. Fusce adipiscing vehicula lacinia. Nunc suscipit pretium fermentum. Quisque non ligula eu dui faucibus tristique ut sed urna.</p>
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- End Event -->
+
+  <!-- End Page -->
+  
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    
+    <div class="row">
+     
+      <div class="large-12 columns">
+          
+          <div class="row">
+          
+            <div class="large-6 columns">
+              
+                  
+              
+              <div id="sidebar_first">
+                
+                  <div class="region region-sidebar-first">
+    <div id="block-system-navigation" class="block block-system block-menu">
+
+    <h2>Navigation</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first collapsed"><a href="/forum">Forums</a></li>
+<li class="last leaf"><a href="/tracker">Recent content</a></li>
+</ul>  </div>
+</div>
+<div id="block-user-login" class="block block-user">
+
+    <h2>User login</h2>
+  
+  <div class="content">
+    <form action="/node?destination=node" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-9eSS8lIlYR-40l5cvioK1ApVvNJD6xhW-E7zUHpm65g" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+</div>
+  </div>
+              
+              </div>
+              
+                
+
+            </div>
+
+            <div class="large-6 columns">
+
+                
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="large-6 columns">
+                <small>
+                  <p>&copy; Copyright APOG</p>
+                </small>
+            </div>
+
+            <div class="large-6 columns">
+                  
+
+                <small>
+
+                  
+                  <ul class="inline-list right">
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Security/Privacy</a></li>
+                  </ul>
+
+                </small>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.write('<script src=' +
+    ('__proto__' in {} ? 'sites/all/themes/apog/javascripts/vendor/zepto' : 'sites/all/themes/apog/javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+    
+  
+  <script>
+    jQuery(document).foundation();
+  </script>    
+</body>
+</html>
